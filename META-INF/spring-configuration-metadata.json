@@ -1,0 +1,91 @@
+{
+  "groups": [
+    {
+      "name": "springfox.documentation",
+      "type": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties"
+    },
+    {
+      "name": "springfox.documentation.open-api",
+      "type": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$OpenApiConfigurationProperties",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "sourceMethod": "getOpenApi()"
+    },
+    {
+      "name": "springfox.documentation.swagger",
+      "type": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$SwaggerConfigurationProperties",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "sourceMethod": "getSwagger()"
+    },
+    {
+      "name": "springfox.documentation.swagger-ui",
+      "type": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$SwaggerUiConfigurationProperties",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "sourceMethod": "getSwaggerUi()"
+    },
+    {
+      "name": "springfox.documentation.swagger.v2",
+      "type": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$Swagger2Configuration",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$SwaggerConfigurationProperties",
+      "sourceMethod": "getV2()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "springfox.documentation.auto-startup",
+      "type": "java.lang.Boolean",
+      "description": "Flag that indicates if springfox should auto start scanning services",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "springfox.documentation.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Flag that indicates if springfox should scan services to produce specifications.",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "springfox.documentation.open-api.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Flag that disables openApi related beans",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$OpenApiConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "springfox.documentation.swagger-ui.base-url",
+      "type": "java.lang.String",
+      "description": "Base url for swagger-ui. For e.g. setting it to \/documentation will put swagger-ui at \/documentation\/swagger-ui\/index.html",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$SwaggerUiConfigurationProperties",
+      "defaultValue": ""
+    },
+    {
+      "name": "springfox.documentation.swagger-ui.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Flag that disables swagger-ui from being resource-handled. No swagger-ui when this is false.",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$SwaggerUiConfigurationProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "springfox.documentation.swagger.v2.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Flag that disables swagger 2 related beans",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$Swagger2Configuration",
+      "defaultValue": false
+    },
+    {
+      "name": "springfox.documentation.swagger.v2.host",
+      "type": "java.lang.String",
+      "description": "Host name to use for swagger 2 specification",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$Swagger2Configuration"
+    },
+    {
+      "name": "springfox.documentation.swagger.v2.use-model-v3",
+      "type": "java.lang.Boolean",
+      "description": "Flag that toggles between generating models using v3.0.0 of the library or the 2.9.x version of the library. This flag can be changed to false, if v3.0.0 is not working as expected.",
+      "sourceType": "springfox.boot.starter.autoconfigure.SpringfoxConfigurationProperties$Swagger2Configuration",
+      "defaultValue": true
+    }
+  ],
+  "hints": []
+}
